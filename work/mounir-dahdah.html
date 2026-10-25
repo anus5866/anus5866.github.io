@@ -1,0 +1,69 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Mounir Dahdah Case Study | Muhammad Anus</title>
+<meta name="description" content="A personal brand and consulting website for a Houston-based business, Medicare insurance and sales-tax consultant, combined with a members-only learning center for his courses.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--soft:#f5f7fa;--text:#1d2327;--muted:#5b6670;--line:#e3e7ec;--accent:#2271b1;--accent-dk:#135e96}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',-apple-system,Segoe UI,Roboto,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;font-size:16px}
+a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-dk)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:10}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:700;color:var(--text);font-size:18px}.logo span{color:var(--accent)}
+nav a{color:var(--muted);margin-left:22px;font-size:15px}nav a:hover{color:var(--accent)}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:11px 22px;border-radius:6px;font-weight:600;font-size:15px}
+.btn:hover{background:var(--accent-dk);color:#fff}.btn.ghost{background:#fff;color:var(--accent);border:1px solid var(--accent)}
+.hero{padding:80px 0 70px}.hero small{color:var(--accent);font-weight:600;letter-spacing:.5px}
+.hero h1{font-size:44px;line-height:1.2;margin:12px 0 18px;max-width:760px}
+.hero p{color:var(--muted);font-size:18px;max-width:640px;margin-bottom:28px}.hero .btn{margin-right:10px;margin-bottom:10px}
+.stats{display:flex;gap:40px;margin-top:44px;flex-wrap:wrap}.stats b{display:block;font-size:28px}.stats span{color:var(--muted);font-size:14px}
+section{padding:70px 0}section.soft{background:var(--soft)}
+h2{font-size:30px;margin-bottom:10px}.lead{color:var(--muted);margin-bottom:34px;max-width:640px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:#fff;border:1px solid var(--line);padding:6px 12px;border-radius:20px;font-size:14px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px}.box h3{font-size:18px;margin-bottom:8px}.box p{color:var(--muted);font-size:15px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.filters button{border:1px solid var(--line);background:#fff;padding:7px 14px;border-radius:20px;cursor:pointer;font:inherit;font-size:14px;color:var(--text)}
+.filters button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:26px}
+.card{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;color:var(--text);display:block;transition:box-shadow .2s}
+.card:hover{box-shadow:0 6px 20px rgba(0,0,0,.08);color:var(--text)}
+.shot{aspect-ratio:16/10;background:var(--soft) center top/cover no-repeat;border-bottom:1px solid var(--line)}
+.card .in{padding:18px}.card .cat{font-size:13px;color:var(--accent);font-weight:600}.card h3{font-size:18px;margin:4px 0 6px}.card p{font-size:14px;color:var(--muted)}
+.more{columns:3 220px;font-size:14px}.more a{display:block;color:var(--muted);padding:3px 0}.more a:hover{color:var(--accent)}
+.tl div{border-left:2px solid var(--accent);padding:0 0 24px 18px}.tl b{display:block}.tl span{color:var(--muted);font-size:14px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.cs-head{padding:56px 0 30px}.back{font-size:14px}.cs-head h1{font-size:38px;margin:12px 0 10px}.cs-head p{color:var(--muted);font-size:18px;max-width:720px}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin:30px 0}
+.meta div{background:var(--soft);border-radius:8px;padding:14px 16px}.meta small{color:var(--muted);display:block;font-size:13px}
+.bigshot{width:100%;border:1px solid var(--line);border-radius:10px;display:block}
+.cs-body{display:grid;grid-template-columns:2fr 1fr;gap:44px;padding:50px 0}
+.cs-body h2{font-size:22px;margin:0 0 12px}.cs-body ul{padding-left:20px;margin-bottom:30px}.cs-body li{margin-bottom:6px}.cs-body p{margin-bottom:30px}
+.steps{counter-reset:s;list-style:none;padding:0!important}.steps li{counter-increment:s;padding-left:38px;position:relative;margin-bottom:14px}
+.steps li:before{content:counter(s);position:absolute;left:0;top:0;width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;font-size:13px;display:flex;align-items:center;justify-content:center}
+aside .box{position:sticky;top:90px}aside .chips{margin:10px 0 20px}
+@media(max-width:760px){.hero h1{font-size:32px}nav a:not(.btn){display:none}.cs-body{grid-template-columns:1fr}.cs-head h1{font-size:30px}}
+</style></head><body>
+<header><div class="wrap"><a class="logo" href="../index.html">Muhammad<span>.</span>Anus</a>
+<nav><a href="../index.html#about">About</a><a href="../index.html#skills">Skills</a><a href="../index.html#work">Work</a><a href="../index.html#experience">Experience</a><a class="btn" href="../index.html#contact">Hire Me</a></nav></div></header>
+
+<div class="wrap cs-head"><a class="back" href="../index.html#work">&larr; Back to all work</a>
+<h1>Mounir Dahdah</h1><p>A personal brand and consulting website for a Houston-based business, Medicare insurance and sales-tax consultant, combined with a members-only learning center for his courses.</p>
+<div class="meta"><div><small>Industry</small>Business Consulting &amp; Online Learning</div><div><small>Location</small>Houston, TX, USA</div><div><small>Category</small>Membership &amp; LMS</div><div><small>My Role</small>WordPress Developer</div></div>
+<a href="https://mounirdahdah.com/" target="_blank" rel="noopener"><img class="bigshot" src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fmounirdahdah.com%2F?w=1400" alt="Mounir Dahdah website homepage" loading="lazy"></a>
+</div>
+<div class="wrap cs-body"><div>
+<h2>The Challenge</h2><p>The client needed one site that does two jobs: present his consulting expertise to new prospects, and give paying members a private area where they can log in and access bite-sized learning content.</p>
+<h2>What I Built</h2><ul><li>Custom homepage with hero, expertise cards, testimonials and newsletter signup</li><li>Expertise section with three dedicated service pages (Business, Health &amp; Insurance, Sales &amp; Use Tax)</li><li>Membership account, login and a protected Learning Center area</li><li>Consultation booking connected to the client&#x27;s Zoom scheduler</li><li>Newsletter and contact forms built with WPForms</li></ul>
+<h2>How It Was Built</h2><ol class="steps"><li>Requirements and sitemap reviewed with the project team</li><li>Page designs prepared and approved (Figma / PSD)</li><li>Approved design built in WordPress with Elementor Pro, section by section</li><li>Plugins installed and configured: Paid Memberships Pro, WPForms, Zoom Scheduler</li><li>Responsive check and fixes for desktop, tablet and mobile</li><li>Speed, basic on-page SEO and cross-browser testing</li><li>Demo review, client feedback round, then launch on the live domain</li></ol>
+</div>
+<aside><div class="box"><h3>Tech Stack</h3><div class="chips"><span class="chip">WordPress</span><span class="chip">Elementor Pro</span><span class="chip">Paid Memberships Pro</span><span class="chip">WPForms</span><span class="chip">Zoom Scheduler</span></div>
+<h3>Key Features</h3><ul style="padding-left:18px;margin:10px 0 20px;font-size:15px"><li>Member login &amp; account pages</li><li>Restricted learning content</li><li>External booking integration</li><li>Testimonials slider</li><li>Fully responsive layout</li></ul>
+<a class="btn" style="width:100%;text-align:center" href="https://mounirdahdah.com/" target="_blank" rel="noopener">Visit Live Site &rarr;</a>
+<p style="margin-top:16px;font-size:14px">Next project: <a href="pinnacle-mental-health.html">Pinnacle Mental Health PLLC</a></p></div></aside>
+</div>
+<footer><div class="wrap"><span>&copy; 2026 Muhammad Anus. WordPress Developer, Karachi, Pakistan.</span>
+<span><a href="mailto:muhammad.anus2159@gmail.com">Email</a> &middot; <a href="https://wa.me/923113552159">WhatsApp</a> &middot; <a href="https://www.linkedin.com/in/muhammad-anus-25b7211a3/">LinkedIn</a> &middot; <a href="https://www.upwork.com/freelancers/~0172359a5244599421">Upwork</a></span></div></footer>
+</body></html>
