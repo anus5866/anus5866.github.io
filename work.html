@@ -71,6 +71,7 @@ aside .box{position:sticky;top:90px}aside .chips{margin:10px 0 20px}
 <div class="wrap cs-head" style="padding-bottom:10px"><a class="back" href="index.html">&larr; Back to home</a>
 <h1>All Work</h1><p>200+ live WordPress websites I've built, newest first. Projects marked <span class="tag">Case Study</span> have a detailed write-up.</p></div>
 <section style="padding-top:20px"><div class="wrap">
+<div class="filters" id="cats"></div>
 <div class="toolbar"><input id="q" type="search" placeholder="Search by website name..."><span id="count"></span></div>
 <div class="grid" id="all"></div>
 <nav class="pager" id="pager" aria-label="Pagination"></nav>
@@ -78,7 +79,7 @@ aside .box{position:sticky;top:90px}aside .chips{margin:10px 0 20px}
 <script src="sites.js"></script>
 <script>
 (function(){
-var PER=12, list=SITES, page=1, grid=document.getElementById('all'), pager=document.getElementById('pager'), q=document.getElementById('q'), count=document.getElementById('count');
+var PER=12, list=SITES, page=1, cat='All', cats=document.getElementById('cats'), grid=document.getElementById('all'), pager=document.getElementById('pager'), q=document.getElementById('q'), count=document.getElementById('count');
 function shot(u){return 'https://s.wordpress.com/mshots/v1/'+encodeURIComponent(u)+'?w=800';}
 function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 function render(){
@@ -86,7 +87,7 @@ function render(){
   var items=list.slice((page-1)*PER,page*PER);
   grid.innerHTML=items.map(function(s){
     var url='https://'+s.d+'/', href=s.cs?('work/'+s.cs+'.html'):url, ext=s.cs?'':' target="_blank" rel="noopener"';
-    return '<a class="card" href="'+href+'"'+ext+'><div class="shot" style="background-image:url(\''+shot(url)+'\')"></div><div class="in">'+(s.cs?'<span class="tag">Case Study</span>':'<div class="cat">Live Website</div>')+'<h3>'+esc(s.n||s.d)+'</h3><p>'+esc(s.d)+'</p></div></a>';
+    return '<a class="card" href="'+href+'"'+ext+'><div class="shot" style="background-image:url(\''+shot(url)+'\')"></div><div class="in">'+'<div class="cat">'+esc(s.c)+(s.cs?' &middot; <span class="tag">Case Study</span>':'')+'</div>'+'<h3>'+esc(s.n||s.d)+'</h3><p>'+esc(s.d)+'</p></div></a>';
   }).join('') || '<p>No websites match your search.</p>';
   count.textContent=list.length+' websites';
   var h='<button '+(page==1?'disabled':'')+' data-p="'+(page-1)+'">&larr; Prev</button>';
@@ -95,7 +96,12 @@ function render(){
   pager.innerHTML=pages>1?h:'';
 }
 pager.onclick=function(e){var p=e.target.getAttribute('data-p'); if(!p||e.target.disabled)return; page=+p; render(); history.replaceState(null,'','#page='+page); document.getElementById('q').scrollIntoView({behavior:'smooth',block:'start'});};
-q.oninput=function(){var v=q.value.toLowerCase().trim(); list=SITES.filter(function(s){return (s.d+' '+(s.n||'')).toLowerCase().indexOf(v)>-1;}); page=1; render();};
+function apply(){var v=q.value.toLowerCase().trim(); list=SITES.filter(function(s){return (cat=='All'||s.c==cat)&&(s.d+' '+(s.n||'')).toLowerCase().indexOf(v)>-1;}); page=1; render();}
+q.oninput=apply;
+var counts={}; SITES.forEach(function(s){counts[s.c]=(counts[s.c]||0)+1;});
+var names=Object.keys(counts).sort(function(a,b){return a=='Other'?1:b=='Other'?-1:counts[b]-counts[a];});
+cats.innerHTML='<button class="on" data-c="All">All ('+SITES.length+')</button>'+names.map(function(n){return '<button data-c="'+esc(n)+'">'+esc(n)+' ('+counts[n]+')</button>';}).join('');
+cats.onclick=function(e){var c=e.target.getAttribute('data-c'); if(!c)return; cat=c; [].forEach.call(cats.children,function(b){b.classList.toggle('on',b===e.target);}); apply();};
 var m=location.hash.match(/page=(\d+)/); if(m)page=+m[1];
 render();
 })();

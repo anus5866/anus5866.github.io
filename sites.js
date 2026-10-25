@@ -1,666 +1,877 @@
 /* All live websites, newest first. Add new ones at the top. */
 const SITES = [
 {
-"d": "alexanderandassociates.org"
+"d": "alexanderandassociates.org",
+"c": "Business & Consulting"
 },
 {
-"d": "di-chotomy.com"
+"d": "di-chotomy.com",
+"c": "Arts, Music & Sports"
 },
 {
-"d": "beauty-glow.co"
+"d": "beauty-glow.co",
+"c": "Beauty & Spa"
 },
 {
 "d": "newhopegrief.org",
+"c": "Non-Profit & Faith",
 "cs": "new-hope-grief",
 "n": "New Hope Grief Support Community"
 },
 {
-"d": "jgcwholesale.com"
+"d": "jgcwholesale.com",
+"c": "eCommerce & Retail"
 },
 {
-"d": "piffusainc.org"
+"d": "piffusainc.org",
+"c": "Non-Profit & Faith"
 },
 {
-"d": "nuruasili.shop"
+"d": "nuruasili.shop",
+"c": "eCommerce & Retail"
 },
 {
-"d": "autoexpresstags.com"
+"d": "autoexpresstags.com",
+"c": "Local Services"
 },
 {
-"d": "alldaymarket.co"
+"d": "alldaymarket.co",
+"c": "eCommerce & Retail"
 },
 {
-"d": "creativeimage.shop"
+"d": "creativeimage.shop",
+"c": "eCommerce & Retail"
 },
 {
-"d": "fwbenterprisesllc.com"
+"d": "fwbenterprisesllc.com",
+"c": "Business & Consulting"
 },
 {
-"d": "africom-philly.org"
+"d": "africom-philly.org",
+"c": "Non-Profit & Faith"
 },
 {
-"d": "spmmachineworks.com"
+"d": "spmmachineworks.com",
+"c": "Construction & Trades"
 },
 {
-"d": "bapbhclinic.com"
+"d": "bapbhclinic.com",
+"c": "Healthcare & Wellness"
 },
 {
-"d": "thevinefacilities.org"
+"d": "thevinefacilities.org",
+"c": "Cleaning & Facility Services"
 },
 {
-"d": "congressofiranianturks.com"
+"d": "congressofiranianturks.com",
+"c": "Non-Profit & Faith"
 },
 {
-"d": "bootsandbeaches.co"
+"d": "bootsandbeaches.co",
+"c": "Travel, Hospitality & Food"
 },
 {
 "d": "bostonhillsresortsandhotels.com",
+"c": "Travel, Hospitality & Food",
 "cs": "boston-hills-resort",
 "n": "Boston Hills Resort & Hotel"
 },
 {
-"d": "mijoyind.com"
+"d": "mijoyind.com",
+"c": "Business & Consulting"
 },
 {
-"d": "expressautoregistrationservice.com"
+"d": "expressautoregistrationservice.com",
+"c": "Local Services"
 },
 {
-"d": "themeinelcollective.com"
+"d": "themeinelcollective.com",
+"c": "Other"
 },
 {
-"d": "3jelite.com"
+"d": "3jelite.com",
+"c": "Business & Consulting"
 },
 {
-"d": "contreras-martinez-brady.com"
+"d": "contreras-martinez-brady.com",
+"c": "Business & Consulting"
 },
 {
 "d": "skyhighbuilders.com",
+"c": "Construction & Trades",
 "cs": "sky-high-builders",
 "n": "Sky High Builders"
 },
 {
-"d": "tmgcybr.com"
+"d": "tmgcybr.com",
+"c": "Tech & Marketing"
 },
 {
-"d": "officialtimothygreathouse.com"
+"d": "officialtimothygreathouse.com",
+"c": "Personal Brands"
 },
 {
-"d": "stratasoundmusic.com"
+"d": "stratasoundmusic.com",
+"c": "Arts, Music & Sports"
 },
 {
 "d": "armandoavalosrealty.com",
+"c": "Real Estate & Rentals",
 "cs": "armando-avalos-realty",
 "n": "Armando Avalos Realty"
 },
 {
-"d": "goodluckinsurance.com"
+"d": "goodluckinsurance.com",
+"c": "Insurance & Finance"
 },
 {
-"d": "angelacimmino.com"
+"d": "angelacimmino.com",
+"c": "Personal Brands"
 },
 {
-"d": "threetooth.com"
+"d": "threetooth.com",
+"c": "Other"
 },
 {
-"d": "tatasecurity.co"
+"d": "tatasecurity.co",
+"c": "Business & Consulting"
 },
 {
-"d": "spadoraonsports.com"
+"d": "spadoraonsports.com",
+"c": "Arts, Music & Sports"
 },
 {
-"d": "301panthers.com"
+"d": "301panthers.com",
+"c": "Arts, Music & Sports"
 },
 {
-"d": "rqlsolutions.com"
+"d": "rqlsolutions.com",
+"c": "Business & Consulting"
 },
 {
-"d": "beyondthefireplace.com"
+"d": "beyondthefireplace.com",
+"c": "Construction & Trades"
 },
 {
-"d": "sparkhypemarketingagency.com"
+"d": "sparkhypemarketingagency.com",
+"c": "Tech & Marketing"
 },
 {
-"d": "esenterprises.us"
+"d": "esenterprises.us",
+"c": "Business & Consulting"
 },
 {
-"d": "purepermission.com"
+"d": "purepermission.com",
+"c": "Other"
 },
 {
-"d": "jaynettelancaster.com"
+"d": "jaynettelancaster.com",
+"c": "Personal Brands"
 },
 {
-"d": "midnightblush.shop"
+"d": "midnightblush.shop",
+"c": "eCommerce & Retail"
 },
 {
-"d": "jkrogers.com"
+"d": "jkrogers.com",
+"c": "Personal Brands"
 },
 {
-"d": "7-contractors.com"
+"d": "7-contractors.com",
+"c": "Construction & Trades"
 },
 {
-"d": "1stladystore.com"
+"d": "1stladystore.com",
+"c": "eCommerce & Retail"
 },
 {
-"d": "tinyvipevents.com"
+"d": "tinyvipevents.com",
+"c": "Events"
 },
 {
-"d": "nolafemmesistas.com"
+"d": "nolafemmesistas.com",
+"c": "Non-Profit & Faith"
 },
 {
-"d": "livingfaithconnection.com"
+"d": "livingfaithconnection.com",
+"c": "Non-Profit & Faith"
 },
 {
-"d": "jenloroceancarriers.com"
+"d": "jenloroceancarriers.com",
+"c": "Transport & Logistics"
 },
 {
 "d": "pinnaclementalhealthpllc.com",
+"c": "Healthcare & Wellness",
 "cs": "pinnacle-mental-health",
 "n": "Pinnacle Mental Health PLLC"
 },
 {
-"d": "capital-hill-ventures.com"
+"d": "capital-hill-ventures.com",
+"c": "Insurance & Finance"
 },
 {
-"d": "biohealthresearch.it.com"
+"d": "biohealthresearch.it.com",
+"c": "Healthcare & Wellness"
 },
 {
-"d": "lisarobertswrites.com"
+"d": "lisarobertswrites.com",
+"c": "Authors & Books"
 },
 {
-"d": "mounirdahdah.net"
+"d": "mounirdahdah.net",
+"c": "Business & Consulting"
 },
 {
-"d": "americanimpactventures.com"
+"d": "americanimpactventures.com",
+"c": "Business & Consulting"
 },
 {
-"d": "cardinwellness.com"
+"d": "cardinwellness.com",
+"c": "Healthcare & Wellness"
 },
 {
-"d": "afterseasontaxhelp.com"
+"d": "afterseasontaxhelp.com",
+"c": "Insurance & Finance"
 },
 {
-"d": "harleyshaven.com"
+"d": "harleyshaven.com",
+"c": "Other"
 },
 {
-"d": "streamyoyo.com"
+"d": "streamyoyo.com",
+"c": "Arts, Music & Sports"
 },
 {
-"d": "usassetex.com"
+"d": "usassetex.com",
+"c": "Insurance & Finance"
 },
 {
-"d": "c1mart.com"
+"d": "c1mart.com",
+"c": "eCommerce & Retail"
 },
 {
-"d": "merikmd.com"
+"d": "merikmd.com",
+"c": "Healthcare & Wellness"
 },
 {
-"d": "statesrentalsllc.com"
+"d": "statesrentalsllc.com",
+"c": "Real Estate & Rentals"
 },
 {
 "d": "chesskidsnation.com",
+"c": "Education & Coaching",
 "cs": "chesskidsnation",
 "n": "ChessKidsNation"
 },
 {
-"d": "vibings.com"
+"d": "vibings.com",
+"c": "Other"
 },
 {
-"d": "hollyshomeideas.com"
+"d": "hollyshomeideas.com",
+"c": "Personal Brands"
 },
 {
-"d": "thesportsbettingarena.live"
+"d": "thesportsbettingarena.live",
+"c": "Arts, Music & Sports"
 },
 {
-"d": "superiorsecuritystaffing.com"
+"d": "superiorsecuritystaffing.com",
+"c": "Business & Consulting"
 },
 {
-"d": "elitetaxstrategies.net"
+"d": "elitetaxstrategies.net",
+"c": "Insurance & Finance"
 },
 {
-"d": "dgpowerwashing.com"
+"d": "dgpowerwashing.com",
+"c": "Cleaning & Facility Services"
 },
 {
-"d": "businessjanitorialsolutions.com"
+"d": "businessjanitorialsolutions.com",
+"c": "Cleaning & Facility Services"
 },
 {
-"d": "legendaryaj.com"
+"d": "legendaryaj.com",
+"c": "Personal Brands"
 },
 {
-"d": "ozstarrecruitment.com.au"
+"d": "ozstarrecruitment.com.au",
+"c": "Business & Consulting"
 },
 {
-"d": "jadedumptrucking.com"
+"d": "jadedumptrucking.com",
+"c": "Transport & Logistics"
 },
 {
-"d": "mkatransportationllc.com"
+"d": "mkatransportationllc.com",
+"c": "Transport & Logistics"
 },
 {
-"d": "wintechdigital.com"
+"d": "wintechdigital.com",
+"c": "Tech & Marketing"
 },
 {
-"d": "thelawfulfoods.com"
+"d": "thelawfulfoods.com",
+"c": "Travel, Hospitality & Food"
 },
 {
-"d": "kaynkaylogistics.com"
+"d": "kaynkaylogistics.com",
+"c": "Transport & Logistics"
 },
 {
-"d": "sratowing.com"
+"d": "sratowing.com",
+"c": "Transport & Logistics"
 },
 {
-"d": "opusdeiusa.org"
+"d": "opusdeiusa.org",
+"c": "Non-Profit & Faith"
 },
 {
-"d": "dovinadvisors.com"
+"d": "dovinadvisors.com",
+"c": "Insurance & Finance"
 },
 {
-"d": "seizetheinitiativeinc.org"
+"d": "seizetheinitiativeinc.org",
+"c": "Non-Profit & Faith"
 },
 {
-"d": "cannabisdropllc.com"
+"d": "cannabisdropllc.com",
+"c": "eCommerce & Retail"
 },
 {
-"d": "elysiumdata.net"
+"d": "elysiumdata.net",
+"c": "Tech & Marketing"
 },
 {
-"d": "awesomeheadshots.com"
+"d": "awesomeheadshots.com",
+"c": "Arts, Music & Sports"
 },
 {
-"d": "lawfulfood.com"
+"d": "lawfulfood.com",
+"c": "Travel, Hospitality & Food"
 },
 {
-"d": "goodexpeditedsprinterservices.com"
+"d": "goodexpeditedsprinterservices.com",
+"c": "Transport & Logistics"
 },
 {
-"d": "zeuswriting.com"
+"d": "zeuswriting.com",
+"c": "Authors & Books"
 },
 {
-"d": "cureaarts.com"
+"d": "cureaarts.com",
+"c": "Arts, Music & Sports"
 },
 {
-"d": "thenoelstone.com"
+"d": "thenoelstone.com",
+"c": "Personal Brands"
 },
 {
-"d": "sportsbettingarena.live"
+"d": "sportsbettingarena.live",
+"c": "Arts, Music & Sports"
 },
 {
-"d": "goodexpeditedservices.com"
+"d": "goodexpeditedservices.com",
+"c": "Transport & Logistics"
 },
 {
-"d": "casas3llc.tech"
+"d": "casas3llc.tech",
+"c": "Tech & Marketing"
 },
 {
-"d": "westbowpress.org"
+"d": "westbowpress.org",
+"c": "Authors & Books"
 },
 {
-"d": "medimedme.com"
+"d": "medimedme.com",
+"c": "Healthcare & Wellness"
 },
 {
-"d": "apmodular.com"
+"d": "apmodular.com",
+"c": "Construction & Trades"
 },
 {
-"d": "empowering-gh.com"
+"d": "empowering-gh.com",
+"c": "Non-Profit & Faith"
 },
 {
-"d": "ijschemicals.com"
+"d": "ijschemicals.com",
+"c": "Business & Consulting"
 },
 {
-"d": "buildabadgeonline.com"
+"d": "buildabadgeonline.com",
+"c": "eCommerce & Retail"
 },
 {
-"d": "pidandc.com"
+"d": "pidandc.com",
+"c": "Other"
 },
 {
-"d": "mybizanswers.net"
+"d": "mybizanswers.net",
+"c": "Business & Consulting"
 },
 {
-"d": "starlightins.com"
+"d": "starlightins.com",
+"c": "Insurance & Finance"
 },
 {
-"d": "goodmasonryinc.com"
+"d": "goodmasonryinc.com",
+"c": "Construction & Trades"
 },
 {
-"d": "louleuzzi.com"
+"d": "louleuzzi.com",
+"c": "Personal Brands"
 },
 {
-"d": "ingoliasjanitorservice.com"
+"d": "ingoliasjanitorservice.com",
+"c": "Cleaning & Facility Services"
 },
 {
-"d": "lp.travelmakers.com"
+"d": "lp.travelmakers.com",
+"c": "Travel, Hospitality & Food"
 },
 {
-"d": "customeventlabels.com"
+"d": "customeventlabels.com",
+"c": "eCommerce & Retail"
 },
 {
-"d": "cashrelate.com"
+"d": "cashrelate.com",
+"c": "Insurance & Finance"
 },
 {
-"d": "juminasolutions.online"
+"d": "juminasolutions.online",
+"c": "Tech & Marketing"
 },
 {
-"d": "pr4musicians.com"
+"d": "pr4musicians.com",
+"c": "Arts, Music & Sports"
 },
 {
-"d": "violasfire.com"
+"d": "violasfire.com",
+"c": "Other"
 },
 {
-"d": "alphaaircraftservices.net"
+"d": "alphaaircraftservices.net",
+"c": "Transport & Logistics"
 },
 {
-"d": "anwarinsurance123.com"
+"d": "anwarinsurance123.com",
+"c": "Insurance & Finance"
 },
 {
-"d": "jenlorintl.com"
+"d": "jenlorintl.com",
+"c": "Transport & Logistics"
 },
 {
-"d": "jailhousepreacher.com"
+"d": "jailhousepreacher.com",
+"c": "Non-Profit & Faith"
 },
 {
-"d": "savepointinsurance.com"
+"d": "savepointinsurance.com",
+"c": "Insurance & Finance"
 },
 {
-"d": "gladysjusinoleon.com"
+"d": "gladysjusinoleon.com",
+"c": "Personal Brands"
 },
 {
-"d": "drsusannabellmin.com"
+"d": "drsusannabellmin.com",
+"c": "Healthcare & Wellness"
 },
 {
-"d": "websiteutilitystore.com"
+"d": "websiteutilitystore.com",
+"c": "Tech & Marketing"
 },
 {
-"d": "authorjohnnielwatlington.com"
+"d": "authorjohnnielwatlington.com",
+"c": "Authors & Books"
 },
 {
-"d": "contoursspalonstore.com"
+"d": "contoursspalonstore.com",
+"c": "eCommerce & Retail"
 },
 {
 "d": "contoursspalonaesthetics.com",
+"c": "Beauty & Spa",
 "cs": "contours-spa-lon",
 "n": "Contours Spa-Lon Aesthetics"
 },
 {
-"d": "priesttransportation.com"
+"d": "priesttransportation.com",
+"c": "Transport & Logistics"
 },
 {
-"d": "craigfordauthor.com/ahackeriam"
+"d": "craigfordauthor.com/ahackeriam",
+"c": "Authors & Books"
 },
 {
-"d": "pepewrites.com"
+"d": "pepewrites.com",
+"c": "Authors & Books"
 },
 {
-"d": "barnecat.com"
+"d": "barnecat.com",
+"c": "Other"
 },
 {
-"d": "ipeepbxs.com"
+"d": "ipeepbxs.com",
+"c": "Tech & Marketing"
 },
 {
-"d": "ipbtechsolutions.com"
+"d": "ipbtechsolutions.com",
+"c": "Tech & Marketing"
 },
 {
-"d": "fund-my-deals.com"
+"d": "fund-my-deals.com",
+"c": "Insurance & Finance"
 },
 {
-"d": "booksbycurry.com"
+"d": "booksbycurry.com",
+"c": "Authors & Books"
 },
 {
-"d": "4hwasteandrecycling.com"
+"d": "4hwasteandrecycling.com",
+"c": "Cleaning & Facility Services"
 },
 {
-"d": "apartments-everywhere.com"
+"d": "apartments-everywhere.com",
+"c": "Real Estate & Rentals"
 },
 {
-"d": "thelaminatedcard.com"
+"d": "thelaminatedcard.com",
+"c": "eCommerce & Retail"
 },
 {
-"d": "betforbig.com"
+"d": "betforbig.com",
+"c": "Arts, Music & Sports"
 },
 {
-"d": "kgirt.com"
+"d": "kgirt.com",
+"c": "Other"
 },
 {
-"d": "cadumpsters.com"
+"d": "cadumpsters.com",
+"c": "Construction & Trades"
 },
 {
-"d": "nujoycare.com"
+"d": "nujoycare.com",
+"c": "Healthcare & Wellness"
 },
 {
-"d": "jdashipping.com"
+"d": "jdashipping.com",
+"c": "Transport & Logistics"
 },
 {
-"d": "tierrabuenalandscape.com"
+"d": "tierrabuenalandscape.com",
+"c": "Construction & Trades"
 },
 {
-"d": "wealthstrategiesusa.com"
+"d": "wealthstrategiesusa.com",
+"c": "Insurance & Finance"
 },
 {
-"d": "larrytorliattrepair.com"
+"d": "larrytorliattrepair.com",
+"c": "Construction & Trades"
 },
 {
-"d": "aspaceforyou.com"
+"d": "aspaceforyou.com",
+"c": "Real Estate & Rentals"
 },
 {
 "d": "immigrantservicecenter.org",
+"c": "Non-Profit & Faith",
 "cs": "immigrant-service-center",
 "n": "Immigrant Service Center"
 },
 {
-"d": "globchart.com"
+"d": "globchart.com",
+"c": "Other"
 },
 {
-"d": "indianriverps.com"
+"d": "indianriverps.com",
+"c": "Other"
 },
 {
 "d": "thebookclubwithkim.com",
+"c": "Authors & Books",
 "cs": "book-club-with-kim",
 "n": "The Book Club with Kim"
 },
 {
-"d": "lilpawsomepups.com"
+"d": "lilpawsomepups.com",
+"c": "Other"
 },
 {
-"d": "targetcarpet.com"
+"d": "targetcarpet.com",
+"c": "Construction & Trades"
 },
 {
 "d": "angkoriantourstravel.com",
+"c": "Travel, Hospitality & Food",
 "cs": "angkorian-tours",
 "n": "Angkorian Tours & Travel"
 },
 {
-"d": "dallasdraperyinstallers.com"
+"d": "dallasdraperyinstallers.com",
+"c": "Construction & Trades"
 },
 {
-"d": "dewildtenv.com"
+"d": "dewildtenv.com",
+"c": "Construction & Trades"
 },
 {
-"d": "theconcordgrapepiecompany.com"
+"d": "theconcordgrapepiecompany.com",
+"c": "Travel, Hospitality & Food"
 },
 {
-"d": "bibmad24.com"
+"d": "bibmad24.com",
+"c": "Other"
 },
 {
 "d": "mounirdahdah.com",
+"c": "Education & Coaching",
 "cs": "mounir-dahdah",
 "n": "Mounir Dahdah"
 },
 {
-"d": "hprents.com"
+"d": "hprents.com",
+"c": "Real Estate & Rentals"
 },
 {
-"d": "westmorelandtexasinsurance.com"
+"d": "westmorelandtexasinsurance.com",
+"c": "Insurance & Finance"
 },
 {
-"d": "comebackbuilder.com"
+"d": "comebackbuilder.com",
+"c": "Education & Coaching"
 },
 {
-"d": "omegamolecular.com"
+"d": "omegamolecular.com",
+"c": "Healthcare & Wellness"
 },
 {
-"d": "sotaslips.com"
+"d": "sotaslips.com",
+"c": "Real Estate & Rentals"
 },
 {
 "d": "iceopedic.com",
+"c": "eCommerce & Retail",
 "cs": "iceopedic",
 "n": "IceOPedic"
 },
 {
-"d": "rushmommy.com"
+"d": "rushmommy.com",
+"c": "Other"
 },
 {
 "d": "sierracoastelectric.com",
+"c": "Construction & Trades",
 "cs": "sierra-coast-electric",
 "n": "Sierra Coast Electric"
 },
 {
-"d": "utahpaintwizards.com"
+"d": "utahpaintwizards.com",
+"c": "Construction & Trades"
 },
 {
-"d": "inclusive-events.com"
+"d": "inclusive-events.com",
+"c": "Events"
 },
 {
-"d": "roymarship.com"
+"d": "roymarship.com",
+"c": "Transport & Logistics"
 },
 {
-"d": "theaihumanparadox.com"
+"d": "theaihumanparadox.com",
+"c": "Authors & Books"
 },
 {
-"d": "jlpowerinc.com"
+"d": "jlpowerinc.com",
+"c": "Construction & Trades"
 },
 {
-"d": "ihcofgeorgia.net"
+"d": "ihcofgeorgia.net",
+"c": "Healthcare & Wellness"
 },
 {
-"d": "biblicaltruthsthatmatter.com"
+"d": "biblicaltruthsthatmatter.com",
+"c": "Non-Profit & Faith"
 },
 {
-"d": "cleaningboss-llc.com"
+"d": "cleaningboss-llc.com",
+"c": "Cleaning & Facility Services"
 },
 {
-"d": "akilasstore.shop"
+"d": "akilasstore.shop",
+"c": "eCommerce & Retail"
 },
 {
-"d": "truthfinder-nelson.com"
+"d": "truthfinder-nelson.com",
+"c": "Other"
 },
 {
-"d": "allforkidlits.com"
+"d": "allforkidlits.com",
+"c": "Authors & Books"
 },
 {
-"d": "prestigevending.com"
+"d": "prestigevending.com",
+"c": "Local Services"
 },
 {
-"d": "syntherna-inc.com"
+"d": "syntherna-inc.com",
+"c": "Healthcare & Wellness"
 },
 {
-"d": "focuswithfaithapparel.com"
+"d": "focuswithfaithapparel.com",
+"c": "eCommerce & Retail"
 },
 {
-"d": "handsontoolkits.com"
+"d": "handsontoolkits.com",
+"c": "Education & Coaching"
 },
 {
-"d": "standupbullying.com"
+"d": "standupbullying.com",
+"c": "Non-Profit & Faith"
 },
 {
-"d": "qualityinpatientcare.org"
+"d": "qualityinpatientcare.org",
+"c": "Healthcare & Wellness"
 },
 {
-"d": "mounirdahdah.online"
+"d": "mounirdahdah.online",
+"c": "Business & Consulting"
 },
 {
-"d": "mrniceguyasf.com"
+"d": "mrniceguyasf.com",
+"c": "eCommerce & Retail"
 },
 {
-"d": "thankatech.com"
+"d": "thankatech.com",
+"c": "Tech & Marketing"
 },
 {
-"d": "streamlinecustomsbrokerage.com"
+"d": "streamlinecustomsbrokerage.com",
+"c": "Transport & Logistics"
 },
 {
-"d": "hoperecovery-services.org"
+"d": "hoperecovery-services.org",
+"c": "Healthcare & Wellness"
 },
 {
-"d": "emlashstudioga.com"
+"d": "emlashstudioga.com",
+"c": "Beauty & Spa"
 },
 {
-"d": "texaslightingandevents.com"
+"d": "texaslightingandevents.com",
+"c": "Events"
 },
 {
-"d": "kiki-wildor.com"
+"d": "kiki-wildor.com",
+"c": "Personal Brands"
 },
 {
-"d": "hepacurix.com"
+"d": "hepacurix.com",
+"c": "Healthcare & Wellness"
 },
 {
 "d": "longislandbottledwater.com",
+"c": "Local Services",
 "cs": "long-island-bottled-water",
 "n": "Long Island Bottled Water"
 },
 {
 "d": "thebalageefoundation.org",
+"c": "Non-Profit & Faith",
 "cs": "balagee-foundation",
 "n": "The Balagee Foundation"
 },
 {
-"d": "camelotcleanerscolarado.com"
+"d": "camelotcleanerscolarado.com",
+"c": "Cleaning & Facility Services"
 },
 {
-"d": "junipercarenetwork.com"
+"d": "junipercarenetwork.com",
+"c": "Healthcare & Wellness"
 },
 {
-"d": "analyticinvestigative.com"
+"d": "analyticinvestigative.com",
+"c": "Business & Consulting"
 },
 {
-"d": "belfanmnatirel.com"
+"d": "belfanmnatirel.com",
+"c": "eCommerce & Retail"
 },
 {
-"d": "beautifulcreationz.art"
+"d": "beautifulcreationz.art",
+"c": "Arts, Music & Sports"
 },
 {
-"d": "perfectposter.com"
+"d": "perfectposter.com",
+"c": "eCommerce & Retail"
 },
 {
-"d": "crestviewalldressedup.com"
+"d": "crestviewalldressedup.com",
+"c": "eCommerce & Retail"
 },
 {
-"d": "fearless1tee.com"
+"d": "fearless1tee.com",
+"c": "eCommerce & Retail"
 },
 {
-"d": "mazayaalsafaa.com"
+"d": "mazayaalsafaa.com",
+"c": "Business & Consulting"
 },
 {
-"d": "mmbcs.com"
+"d": "mmbcs.com",
+"c": "Business & Consulting"
 },
 {
-"d": "hltservices.com"
+"d": "hltservices.com",
+"c": "Business & Consulting"
 },
 {
-"d": "alnahartransportation.com"
+"d": "alnahartransportation.com",
+"c": "Transport & Logistics"
 },
 {
-"d": "infinite-pools.com"
+"d": "infinite-pools.com",
+"c": "Construction & Trades"
 },
 {
-"d": "jabalalbaz.com"
+"d": "jabalalbaz.com",
+"c": "Business & Consulting"
 },
 {
-"d": "everfix.ae"
+"d": "everfix.ae",
+"c": "Construction & Trades"
 },
 {
-"d": "triadcleanings.com"
+"d": "triadcleanings.com",
+"c": "Cleaning & Facility Services"
 },
 {
-"d": "mohamedahmedfouad.com"
+"d": "mohamedahmedfouad.com",
+"c": "Personal Brands"
 },
 {
-"d": "velnoor.com"
+"d": "velnoor.com",
+"c": "eCommerce & Retail"
 },
 {
-"d": "yogilalajeweler.com"
+"d": "yogilalajeweler.com",
+"c": "eCommerce & Retail"
 },
 {
-"d": "internationalpediatricsummit.com"
+"d": "internationalpediatricsummit.com",
+"c": "Events"
 },
 {
-"d": "oidconference2026.com"
+"d": "oidconference2026.com",
+"c": "Events"
 },
 {
-"d": "tayerdesigns.com"
+"d": "tayerdesigns.com",
+"c": "Arts, Music & Sports"
 }
 ];
